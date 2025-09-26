@@ -102,16 +102,20 @@ Go to `Cursor Settings` -> `MCP` -> `New MCP Server`. Use the config provided ab
 
 <details>
   <summary>Gemini CLI</summary>
-  Follow the <a href="https://github.com/google-gemini/gemini-cli/blob/main/docs/tools/mcp-server.md#how-to-set-up-your-mcp-server">MCP guide</a>
-  using the standard config from above. You can also install the Chrome DevTools MCP server using the Gemini CLI:
+Install the Chrome DevTools MCP server using the Gemini CLI.
+
+**Project wide:**
 
 ```bash
-# Project-wide
 gemini mcp add chrome-devtools npx chrome-devtools-mcp@latest
+```
 
-# Global
+**Globally:**
+```bash
 gemini mcp add -s user chrome-devtools npx chrome-devtools-mcp@latest
 ```
+
+Alternatively, follow the <a href="https://github.com/google-gemini/gemini-cli/blob/main/docs/tools/mcp-server.md#how-to-set-up-your-mcp-server">MCP guide</a> and use the standard config from above.
 </details>
 
 <details>
